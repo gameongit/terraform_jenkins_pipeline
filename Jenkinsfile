@@ -11,7 +11,7 @@ pipeline{
                         submoduleCfg: [],
                         userRemoteConfigs: [[
                             credentialsId: '',
-                            url: 'https://github.com/gameongit/terraform'
+                            url: 'https://github.com/gameongit/terraform_jenkins_pipeline.git'
                         ]]
                     ])
                 }
