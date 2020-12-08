@@ -30,7 +30,7 @@ pipeline{
                 dir (''){
                     sh label: 'Plan Terraform', script: "/usr/bin/terraform plan -out=tfplan -input=false" // -var image_name=${image_name} -var ghost_ext_port=${ghost_ext_port}"
                     script {
-                        timeout(time: 10, unit: 'MINUTES') {
+                        timeout(time: 2, unit: 'MINUTES') {
                             input(id: "Deploy Gate", message: "Deploy environment?", ok: 'Deploy')
                         }
                     }
