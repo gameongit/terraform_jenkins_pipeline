@@ -15,3 +15,17 @@ variable "ext_port" {
   description = "External port for container."
   default     = "80"
 }
+variable "target_vol" {
+  description = "For the container path"
+  default     = "/var/www/html"
+}
+variable "source_vol" {
+  description = "For the mount"
+  default     = "/tmp/html"
+}
+variable "mount_type" {
+  description = "Mount Type"
+  default     = "bind"
+}
+
+
