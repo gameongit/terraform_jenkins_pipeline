@@ -9,15 +9,15 @@ variable "image_name" {
 }
 variable "int_port" {
   description = "Internal port for container."
-  default     = "2368"
+  default     = "80"
 }
 variable "ext_port" {
   description = "External port for container."
-  default     = "80"
+  default     = "8081"
 }
 variable "target_vol" {
   description = "For the container path"
-  default     = "/var/www/html"
+  default     = "/usr/share/nginx/html"
 }
 variable "source_vol" {
   description = "For the mount"
